@@ -1,0 +1,29 @@
+Body Section :-
+
+- body section contains information to display in browser workspace.
+
+
+Attributes :
+- bgcolor                          :    It sets a background color
+- text                                  :    It sets text color
+
+
+
+<body bgcolor="red" text="white">
+
+HTML Color:
+- You can define color using
+	            a) Color Name
+		    b) Hexadecimal code
+
+Hexa Code:
+
+#RGB     				= 3 chars
+#RRGGBB			= 6 chars
+
+RGB 	= 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+
+Syntax: 
+			<body bgcolor="#f00">        red
+			<body text="#fff">		white
+
