@@ -27,3 +27,54 @@ Syntax:
 			<body bgcolor="#f00">        red
 			<body text="#fff">		white
 
+
+- background          : it sets a background image for page .
+ 	
+	  			<body background =" Netflixback.jpg">
+
+- align                       : It aligns the content left, center, right or justify.
+	
+				<body align ="center">
+				<body align="justify">
+
+- leftmargin
+- rightmargin
+- topmargin
+- bottommargin
+
+			<body leftmargin="350" rightmargin="350" topmargin="50" bottommargin="50">
+
+
+							* What is max width of page ?
+							Ans :-      1200 px.
+
+
+- alink    : sets color for active link
+- vlink   : sets color for visited
+ 
+			<body vlink="red" alink="yello">
+				
+				<a href="http://www.amazon.com">Amazon</a>
+
+			</body>
+
+
+
+
+ || <== Body Tag Arrributes : ==>||
+
+- bgcolor
+- text
+- background
+- align
+- vlink
+- alink
+- leftmargin
+- rightmargin
+- bottommargin
+- topmargin
+
+
+
+
+
