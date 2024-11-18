@@ -1,0 +1,64 @@
+<!-- 
+ Fieldset and Legend
+
+
+ <fielset>         defines a frame
+ <legend>          define a caption for frame
+
+
+    <fieldset>
+        <legend> Your Title </legend>
+        your content
+    </fieldset>
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset and legend</title>
+    <style>
+        fieldset{
+            margin-top: 20px;
+        }
+
+        dt{
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        dl{
+            display: grid;
+            grid-template-columns: 2fr 7fr;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Basic Details</legend>
+        <dl>
+            <dt>Name</dt>
+            <dd>Samsung TV</dd>
+            <dt>Price</dt>
+            <dd>60000.32</dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend>Shipping Details</legend>
+        <dl>            
+            <dt>Stock</dt>
+            <dd>Available</dd>
+            <dt>Shipped To</dt>
+            <dd>Delhi, Hyderabad</dd>
+            <dt>Vendor</dt>
+            <dd>Reliance Digital</dd>
+        </dl>
+    </fieldset>
+</body>
+
+</html>
