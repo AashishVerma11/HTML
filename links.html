@@ -1,0 +1,95 @@
+<!-- 
+-  Link is clickable text, picture or graphic that navigates the user to any loction when clicked.
+
+- Hyper Links are classified into 2 types
+            a) Intra document links
+            b) Inter document links
+
+Intra document links:
+- A hyperlink that navigates from one location to another within the same page.
+- Hyperlink is created by using "anchor" element that uses <a> tag.
+- Link uses "href" attribute that sets the target URL.
+
+FAQ: How to target any reference within the page with style
+Ans : By using ".target" selector 
+======================================================================
+Syntax: .topic{
+             //initial effects;
+        }
+        .topic:target{
+            //effects to apply when it is a target for hyperlink
+        }
+======================================================================
+
+FAQ: how to remove underline for Hyperlink?
+Ans: byb using "text-decoration : none " with syle
+
+        a{
+        text-decoration: none;
+        }
+
+FAQ: How to change color for HyperLink?
+
+a:link{
+    effect for normal link;
+}
+    
+a:visited{
+    effect for visited link;
+}
+    
+a:active{
+    effect for active link;
+}
+
+a{
+ //effects for all phases[visited, normal and active]
+}
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        #rightPanel{
+            height: 680px;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="leftPanel">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Electronics">Electronics</a></li>
+                <li><a href="#Footwear">Footwear</a></li>
+                <li><a href="#Fashion">Fashion</a></li>
+            </ul>
+        </div>
+        <div id="rightPanel">
+            <h2 id="Home">Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.vLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.</p>
+
+            <h2 id="Electronics">Electronics</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.vLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.vLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.</p>
+
+            <h2 id="Footwear">Footwear</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.vLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.</p>
+
+            <h2 id="Fashion">Fashion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.vLorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae fugit dicta obcaecati necessitatibus quaerat vel qui itaque laudantium, architecto, sequi mollitia repellat veniam doloremque officia doloribus natus deleniti ipsam.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
