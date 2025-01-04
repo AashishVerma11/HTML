@@ -5,6 +5,7 @@
 - it is not embedded into page, it is embedded into browser window.
 
 
+
 Syntax: 
 
 		<frameset     rows/cols="15% 70% 15%">

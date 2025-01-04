@@ -1,0 +1,123 @@
+<!-- 
+Tables in HTML
+- Used to arrange content into rows and columns.
+- Table Tags
+
+            <table>            Start and end of table
+            <thead>            head section
+            <tbody>            body section
+            <tfoot>            footer section
+            <tr>               row 
+            <th>               heading cell
+            <td>               normal cell
+            <colgroup>         groups the columns to difne a style
+            <caption>          table caption
+
+Table Attributes
+================
+1. frame, rules and border
+
+
+    frame     :   It is defined for entire table, it can have values
+                  "box, rhs, lhs, above, below, void"
+
+                  <table frame="box|rhs|lhs|above|below|void">
+    
+    rules     :   defined for rows, columns and groups. The values 
+                  "rows, cols, groups, none, all"
+
+                  <table rules="row|cols|groups|none|all">
+
+    border    :  defined for cells. it have values
+                        0[false]     = no border
+                        1[true]      = border
+
+                  <table border ="1|0">
+
+
+    Note: Border can't display if table is configurd with "rules" attribute.
+          You have to remove "rules" attribute from table to define border.
+          The priority is given for rules.
+          If you configure both rules and border for table, the it will display only rules.
+
+2. cellspacing and cellpadding
+
+   cellspacing           :  it sets space between cells in table.
+   cellpading            :  it sets space around table cell content.
+   
+   <table cellspacing="20" cellpadding="10">
+
+3. background color and image
+
+    bgcolor       : it sets background color for table, group, row,cell.
+    background    : it sets background image for table, group, row, cell.
+    
+    <table bgcolor="red">
+    <thead bgcolor="red">
+    <tr bgcolor="red">
+    <td bgcolor="red">
+    <th bgcolor="red">
+
+    <table background="Your_image_path">
+
+4. Alignments
+
+        align        : horizontally left, center, right or justified
+        valign       : vertically top, center and bottom .
+
+        <table align="" valign="">
+        <td align="" valign="">
+
+
+5. Width and Height
+
+            width  : it defines width for table and cell
+            height : it defines height for table and cell or row.
+
+6. Merging of rows and columns
+
+            colspan : it can merge multiple columns into single cell.
+            rowspan : it can merge multiple rows into single cell
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML </title>
+</head>
+<body>
+    <table border="1"frame="box" rules="all" width="500">
+        <caption>Products Catalog</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Pricec</th>
+                <th>Preview</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JBL Speaker</td>
+                <td>5600.44</td>
+                <td><img src="assests/jblspeaker.jpg" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Earpods</td>
+                <td>3600.44</td>
+                <td><img src="assests/earpods.jpg" width="100" height="100"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>&copy; copyright 2024</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
