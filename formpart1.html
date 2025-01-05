@@ -1,0 +1,96 @@
+<!-- day- 22;
+                  FORM IN HTML
+
+- Form provides an UI [User Interface] that allows the user to interact with application.
+- Form is a container with collection of elements like button, textbox, listbox, dropdown, radio, checkbox etc.
+
+- HTML provides <form> container that comprises of various element.
+
+The Form Container Attributes:
+==============================
+
+1. id               : It defines a unique ID for form
+2. name             : It defines a reference name for form
+3. class            : It specifies a css class name
+
+Syntax: 
+          <form  id="frmRegister" name="frmRegister" class="form-container">
+
+4. method    : It defines the type of action to perform. Every HTML form comprises of 2 action methods
+                a) GET
+                B) POST
+ 
+            
+        Http Method | Http Verbs                   Purpose
+        ==================================================
+        GET                                  Fetch Data
+        POST                                 Submit Data
+        PUT                                  Modify all Details
+        PATCH                                Modify partial Details
+        DELETE                               Remove details
+
+# What is difference between GET and POST ?
+
+GET 
+- It submits data to server.
+- It appends data into URL as Query String
+- It can be viewed by any user.
+- It is not safe 
+- it is easy to hack your data.
+- Any one can bookmark your data.
+- it is stored in browser logs[history].
+- Data is appended into URL, hence you can't submit comples data
+- you can't submit binary type data [image, graphics]
+- you have limit for data
+- you can subit max 2048 chars.
+
+POST
+- It sumit data to server.
+- Data is submitted as "FormBody"
+- It is not appended into URL
+- It is safe
+- it is hard to hack 
+- it is not in browser histroy.
+- it can't be bookmarked.
+- there is no limit for data, you can submit any amount of data
+- you submit any complex data. Even binary type data.
+
+
+Note : Always use GET method for fetching data.
+       Always use POST method for submitting data.
+
+5) action:   It indicates the target page, where to submit the data. Usually it refers to server side pages.[JSP, PHP ASP ASPX etc...]
+
+
+6) novalidate: 
+ 
+* HTML 5 introduces form validations.
+* Form validation verifies the details before submitting.
+* It allows submitting only when all field are valid 
+* it allows submitting only when all field are valid.
+* "novalidate" is used to ignore validation. it will by-pass the validation
+
+<form novalidate>
+
+* This will by-pass only HTML validations.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Register User</h1>
+    <form method="GET">
+
+    </form>
+</body>
+</html>
